@@ -1,0 +1,45 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    top: 0;
+}
+@media screen and (max-width:645px) {
+    #no-mobile {
+        display: none;
+    }
+}
+
+
+#no-landscape{
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    top: 0;
+}
+
+#no-landscape i {
+    margin-top: 30px;
+    font-size: 60px;
+}
+
+@media (orientation: portrait ) {
+    #no-landscape {
+        display: none;
+    }
+}

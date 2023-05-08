@@ -1,0 +1,62 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+ 
+.screen-header__title {
+font-size: 32px;
+font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+    position: relative;
+}
+
+.screen-header__dot-notice {
+    background-color: red;
+    width:6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 19px;
+    left: 22px
+}
+@keyframes Cogspin {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+}
+.screen-header__icons .fa-cog:hover {
+     animation: Cogspin 2s linear infinite;
+}
+
+
+@keyframes music {
+
+0% {
+  transform: none;
+}
+25% {
+  transform: rotateZ(30deg);
+  
+}
+50% {
+  transform: rotateZ(-30deg);
+}
+100% {
+  transform: none;
+}
+
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: music 2s ease-in-out infinite;
+}
+
